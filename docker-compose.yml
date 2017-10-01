@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  knime:
+    build: .
+    volumes:
+    - "./sample/workflow:/workflow"
+    - "./sample/input:/input:ro"
+    - "./sample/output:/output"
